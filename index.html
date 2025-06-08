@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume Submission Portal</title>
+</head>
+<body>
+  <h1>Upload Your Resume (PDF Only)</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <label>Name: <input type="text" name="name" required></label><br><br>
+    <label>Email: <input type="email" name="email" required></label><br><br>
+    <input type="file" name="resume" accept="application/pdf" required><br><br>
+    <button type="submit">Submit Resume</button>
+  </form>
+</body>
+</html>
